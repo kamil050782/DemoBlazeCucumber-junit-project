@@ -85,6 +85,7 @@ public class DemoBlazeStepDefinition {
         Thread.sleep(3000);
         demoBlazePage.okBtn.click();
     }
+
     @Then("Verify that there is no product in the cart")
     public void verify_that_there_is_no_product_in_the_cart() {
         demoBlazePage.cartBtn.click();

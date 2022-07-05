@@ -3,6 +3,7 @@ package com.demoblaze.step_definitions;
 import com.demoblaze.pages.DemoBlazePage;
 import com.demoblaze.utilities.ConfigurationReader;
 import com.demoblaze.utilities.Driver;
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -67,18 +68,25 @@ public class DemoBlazeStepDefinitionGroup13 {
 
 
     @Then("Click on Place order")
-    public void click_on_place_order() {
-
+    public void click_on_place_order() throws InterruptedException {
+        Thread.sleep(3000);
+        demoBlazePage.placeOrderBtn.click();
     }
 
     @Then("Fill in all web form fields.")
     public void fill_in_all_web_form_fields() {
-
+        Faker faker=new Faker();
+        demoBlazePage.name.sendKeys(faker.name().fullName());
+        demoBlazePage.country.sendKeys(faker.country().name());
+        demoBlazePage.city.sendKeys(faker.address().cityName());
+        demoBlazePage.card.sendKeys(faker.finance().creditCard());
+        demoBlazePage.month.sendKeys(faker.numerify("11"));
+        demoBlazePage.year.sendKeys(faker.numerify("2027"));
     }
 
     @Then("Click on Purchase")
     public void click_on_purchase() {
-
+        demoBlazePage.purchaseBtn.click();
     }
 
     @Then("Assert purchase amount  expected.")

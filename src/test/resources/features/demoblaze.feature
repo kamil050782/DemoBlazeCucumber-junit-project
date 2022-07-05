@@ -15,4 +15,4 @@ Feature: Demo Blaze Functionality
     Then Click on Purchase
     Then Assert purchase amount  expected.
     Then Click Ok button
-    Then Verify that there is no product in the cart
+

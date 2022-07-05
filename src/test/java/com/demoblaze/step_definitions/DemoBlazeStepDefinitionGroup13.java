@@ -8,6 +8,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.Alert;
 
 public class DemoBlazeStepDefinitionGroup13 {
@@ -91,18 +92,15 @@ public class DemoBlazeStepDefinitionGroup13 {
 
     @Then("Assert purchase amount  expected.")
     public void assert_purchase_amount_expected() {
-
+        Assert.assertTrue(demoBlazePage.confirmationText.getText().contains("Amount: 700 USD"));
     }
 
     @Then("Click Ok button")
     public void click_ok_button() {
-
+        demoBlazePage.okBtn.click();
     }
 
-    @Then("Verify that there is no product in the cart")
-    public void verify_that_there_is_no_product_in_the_cart() {
 
-    }
 
 
 

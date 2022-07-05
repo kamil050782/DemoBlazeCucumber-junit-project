@@ -12,7 +12,7 @@ public class DemoBlazeStepDefinitionGroup13 {
     DemoBlazePage demoBlazePage = new DemoBlazePage();
     @Given("Customer navigation through product categories: Phones, Laptops and Monitors")
     public void customer_navigation_through_product_categories_phones_laptops_and_monitors() {
-
+        Driver.getDriver().get(ConfigurationReader.getProperty("demoBlaze.url"));
     }
     @When("Navigate  Laptops → Dell  and click on Add to cart. Accept pop up confirmation.")
     public void navigate_laptops_dell_and_click_on_add_to_cart_accept_pop_up_confirmation() {

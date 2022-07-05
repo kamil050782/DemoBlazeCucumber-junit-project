@@ -26,6 +26,7 @@ public class DemoBlazeStepDefinitionGroup13 {
     public void navigate_to_the_monitors_asus_monitor_and_click_on_add_to_cart_accept_pop_up_confirmation() {
 
     }
+
     @When("Navigate to the Cart → Delete Asus monitor  from cart.")
     public void navigate_to_the_cart_delete_asus_monitor_from_cart() {
 

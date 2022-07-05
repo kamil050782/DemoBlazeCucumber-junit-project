@@ -10,6 +10,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DemoBlazeStepDefinitionGroup13 {
     DemoBlazePage demoBlazePage = new DemoBlazePage();
@@ -32,8 +34,10 @@ public class DemoBlazeStepDefinitionGroup13 {
 
     @When("Navigate to Phones → Sony Xperia  and click on Add to cart. Accept pop up confirmation.")
     public void navigate_to_phones_sony_xperia_and_click_on_add_to_cart_accept_pop_up_confirmation() throws InterruptedException {
+
         demoBlazePage.productStore.click();
         demoBlazePage.phones.click();
+        Thread.sleep(3000);
         demoBlazePage.sonyXperia.click();
         demoBlazePage.addCartBtn.click();
         Thread.sleep(3000);

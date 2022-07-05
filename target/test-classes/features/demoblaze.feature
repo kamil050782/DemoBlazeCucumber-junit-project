@@ -5,10 +5,11 @@ Feature: Demo Blaze Functionality
   @wip
   Scenario: User can go through product categories
     Given Customer navigation through product categories: Phones, Laptops and Monitors
-    When Navigate  Laptops → Sony vaio i5 and click on Add to cart. Accept pop up confirmation.
-    When Navigate to Phones → Samsung galaxy s6 and click on Add to cart. Accept pop up confirmation.
-    And Navigate to the Monitors → Apple monitor  and click on Add to cart. Accept pop up confirmation.
-    And Navigate to Cart → Delete Apple monitor  from cart.
+    When Navigate  Laptops → Dell  and click on Add to cart. Accept pop up confirmation.
+    When Navigate to Phones → Sony Xperia  and click on Add to cart. Accept pop up confirmation.
+    And Navigate to the Monitors → Asus monitor  and click on Add to cart. Accept pop up confirmation.
+    And Navigate to the Cart → Delete Asus monitor  from cart.
+    And Navigate to the Cart → Delete Sony Xperia z5  from cart.
     Then Click on Place order
     Then Fill in all web form fields.
     Then Click on Purchase

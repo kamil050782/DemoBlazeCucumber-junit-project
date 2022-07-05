@@ -52,7 +52,7 @@ $(document).ready(function() {
             data: [
                 0,
                 0,
-                10,
+                11,
                 0,
                 1
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 11) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 12) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>05 Jul 2022, 11:41</td>
+      <td>05 Jul 2022, 12:26</td>
     </tr>
   </tbody>
 </table>
@@ -327,16 +327,16 @@ $(document).ready(function() {
 
         <td >0</td>
         <td >0</td>
-        <td     class="skipped"   >10</td>
+        <td     class="skipped"   >11</td>
         <td >0</td>
         <td   class="undefined" >1</td>
-        <td class="total">11</td>
+        <td class="total">12</td>
 
         <td >0</td>
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="3999600">0.003</td>
+        <td class="duration" data-value="5129200">0.005</td>
         <td class="failed">Failed</td>
       </tr>
   </tbody>
@@ -346,25 +346,25 @@ $(document).ready(function() {
       <td></td>
       <td>0</td>
       <td>0</td>
-      <td>10</td>
-      <td>0</td>
-      <td>1</td>
       <td>11</td>
+      <td>0</td>
+      <td>1</td>
+      <td>12</td>
 
       <td>0</td>
       <td>1</td>
       <td>1</td>
 
-      <td class="duration">0.003</td>
+      <td class="duration">0.005</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
       <td>0.00%</td>
       <td>0.00%</td>
-      <td>90.91%</td>
+      <td>91.67%</td>
       <td>0.00%</td>
-      <td>9.09%</td>
+      <td>8.33%</td>
       <td></td>
       <td>0.00%</td>
       <td>100.00%</td>

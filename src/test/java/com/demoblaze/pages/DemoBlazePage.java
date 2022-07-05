@@ -71,4 +71,10 @@ public class DemoBlazePage {
 
     @FindBy(css = "#tbodyid")
     public WebElement emptyCart;
+
+    @FindBy(xpath = "//td[.='ASUS Full HD']/following-sibling::td/following-sibling::td/a[.='Delete']")
+    public WebElement asusDeleteBtn;
+
+    @FindBy(xpath = "//td[.='Sony xperia z5']/following-sibling::td/following-sibling::td/a[.='Delete']")
+    public WebElement sonyDeleteBtn;
 }

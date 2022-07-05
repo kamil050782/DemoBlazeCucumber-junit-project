@@ -9,7 +9,7 @@ Feature: Demo Blaze Functionality
     When Navigate to Phones → Sony Xperia  and click on Add to cart. Accept pop up confirmation.
     And Navigate to the Monitors → Asus monitor  and click on Add to cart. Accept pop up confirmation.
     And Navigate to the Cart → Delete Asus monitor  from cart.
-    And Navigate to the Cart → Delete Sony Xperia z5  from cart.
+    And Navigate  the Cart → Delete Sony Xperia   from cart.
     Then Click on Place order
     Then Fill in all web form fields.
     Then Click on Purchase

@@ -53,13 +53,18 @@ public class DemoBlazeStepDefinitionGroup13 {
 
     @When("Navigate to the Cart → Delete Asus monitor  from cart.")
     public void navigate_to_the_cart_delete_asus_monitor_from_cart() {
-
+        demoBlazePage.productStore.click();
+        demoBlazePage.cartBtn.click();
+        demoBlazePage.asusDeleteBtn.click();
     }
 
-    @When("Navigate to the Cart → Delete Sony Xperia z5  from cart.")
-    public void navigate_to_the_cart_delete_sony_xperia_z5_from_cart() {
-
+    @And("Navigate  the Cart → Delete Sony Xperia   from cart.")
+    public void navigateTheCartDeleteSonyXperiaFromCart() {
+        demoBlazePage.productStore.click();
+        demoBlazePage.cartBtn.click();
+        demoBlazePage.sonyDeleteBtn.click();
     }
+
 
     @Then("Click on Place order")
     public void click_on_place_order() {
@@ -90,6 +95,8 @@ public class DemoBlazeStepDefinitionGroup13 {
     public void verify_that_there_is_no_product_in_the_cart() {
 
     }
+
+
 
 }
 

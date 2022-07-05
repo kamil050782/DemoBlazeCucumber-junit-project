@@ -6,6 +6,7 @@ import com.demoblaze.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.Alert;
 
 public class DemoBlazeStepDefinitionGroup13 {
     DemoBlazePage demoBlazePage=new DemoBlazePage();
@@ -14,8 +15,14 @@ public class DemoBlazeStepDefinitionGroup13 {
         Driver.getDriver().get(ConfigurationReader.getProperty("demoBlaze.url"));
     }
     @When("Navigate  Laptops → Sony vaio i5 and click on Add to cart. Accept pop up confirmation.")
-    public void navigate_laptops_sony_vaio_i5_and_click_on_add_to_cart_accept_pop_up_confirmation() {
-
+    public void navigate_laptops_sony_vaio_i5_and_click_on_add_to_cart_accept_pop_up_confirmation() throws InterruptedException {
+        Thread.sleep(3000);
+       demoBlazePage.laptops.click();
+       demoBlazePage.sonyVaio.click();
+      demoBlazePage.addCartBtn.click();
+      Thread.sleep(3000);
+      Alert alert=Driver.getDriver().switchTo().alert();
+      alert.accept();
     }
     @When("Navigate to Phones → Samsung galaxy s6 and click on Add to cart. Accept pop up confirmation.")
     public void navigate_to_phones_samsung_galaxy_s6_and_click_on_add_to_cart_accept_pop_up_confirmation() {

@@ -54,14 +54,16 @@ public class DemoBlazeStepDefinitionGroup13 {
     }
 
     @When("Navigate to the Cart → Delete Asus monitor  from cart.")
-    public void navigate_to_the_cart_delete_asus_monitor_from_cart() {
+    public void navigate_to_the_cart_delete_asus_monitor_from_cart() throws InterruptedException {
+        Thread.sleep(3000);
         demoBlazePage.productStore.click();
         demoBlazePage.cartBtn.click();
         demoBlazePage.asusDeleteBtn.click();
     }
 
     @And("Navigate  the Cart → Delete Sony Xperia   from cart.")
-    public void navigateTheCartDeleteSonyXperiaFromCart() {
+    public void navigateTheCartDeleteSonyXperiaFromCart() throws InterruptedException {
+        Thread.sleep(3000);
         demoBlazePage.productStore.click();
         demoBlazePage.cartBtn.click();
         demoBlazePage.sonyDeleteBtn.click();

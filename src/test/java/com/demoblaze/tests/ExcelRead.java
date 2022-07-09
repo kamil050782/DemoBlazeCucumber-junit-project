@@ -14,7 +14,7 @@ public class ExcelRead {
        String path="PairMessage.xlsx";
         FileInputStream fileInputStream=new FileInputStream(path);
         XSSFWorkbook workbook=new XSSFWorkbook(fileInputStream);
-        XSSFSheet sheet= workbook.getSheet("Pair1");
+        XSSFSheet sheet= workbook.getSheet("Sheet1");
         System.out.print(sheet.getRow(0).getCell(0)+" ");
         System.out.print(sheet.getRow(0).getCell(1)+" ");
         System.out.print(sheet.getRow(0).getCell(2)+" ");

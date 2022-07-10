@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: Demo Blaze Functionality
+Test set: Etsy Title Verification
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.196 s - in Demo Blaze Functionality
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.946 s - in Etsy Title Verification

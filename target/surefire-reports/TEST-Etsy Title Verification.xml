@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Demo Blaze Functionality" time="35.196" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Etsy Title Verification" time="18.946" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -62,32 +62,68 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="User can go through product categories" classname="Demo Blaze Functionality" time="35.196">
-    <system-out><![CDATA[
-@wip
-Scenario: User can go through product categories                                                     &amp#27;[90m# src/test/resources/features/demoblaze.feature:6&amp#27;[0m
+  <testcase name="Etsy title verification" classname="Etsy Title Verification" time="5.489">
+    <system-out><![CDATA[Jul 10, 2022 1:47:44 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\husey\AppData\Local\Temp\cucumber13534283566084677755.json' contains 2 features
+
+&amp#27;[32m&amp#27;[1m┌──────────────────────────────────────────────────────────────────────────┐&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m View your Cucumber Report at:                                            &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m &amp#27;[1m&amp#27;[36m&amp#27;[4mhttps://reports.cucumber.io/reports/55b88f57-45b3-46eb-9edd-d98ef63d5a86&amp#27;[0m &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m                                                                          &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m &amp#27;[1mThis report will self-destruct in 24h.&amp#27;[0m                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m│&amp#27;[0m Keep reports forever: &amp#27;[4m&amp#27;[1m&amp#27;[36mhttps://reports.cucumber.io/profile&amp#27;[0m                &amp#27;[32m&amp#27;[1m│&amp#27;[0m
+&amp#27;[32m&amp#27;[1m└──────────────────────────────────────────────────────────────────────────┘&amp#27;[0m
+
+@etsy
+Scenario: Etsy title verification                                                                                        &amp#27;[90m# src/test/resources/features/etsy.feature:10&amp#27;[0m
 Before Scenario is running
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mCustomer navigation through product categories: Phones, Laptops and Monitors&amp#27;[0m                 &amp#27;[90m# com.demoblaze.step_definitions.DemoBlazeStepDefinitionGroup13.customer_navigation_through_product_categories_phones_laptops_and_monitors()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mNavigate  Laptops â†’ Dell  and click on Add to cart. Accept pop up confirmation.&amp#27;[0m               &amp#27;[90m# com.demoblaze.step_definitions.DemoBlazeStepDefinitionGroup13.navigate_laptops_dell_and_click_on_add_to_cart_accept_pop_up_confirmation()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mNavigate to Phones â†’ Sony Xperia  and click on Add to cart. Accept pop up confirmation.&amp#27;[0m       &amp#27;[90m# com.demoblaze.step_definitions.DemoBlazeStepDefinitionGroup13.navigate_to_phones_sony_xperia_and_click_on_add_to_cart_accept_pop_up_confirmation()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mNavigate to the Monitors â†’ Asus monitor  and click on Add to cart. Accept pop up confirmation.&amp#27;[0m &amp#27;[90m# com.demoblaze.step_definitions.DemoBlazeStepDefinitionGroup13.navigate_to_the_monitors_asus_monitor_and_click_on_add_to_cart_accept_pop_up_confirmation()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mNavigate to the Cart â†’ Delete Asus monitor  from cart.&amp#27;[0m                                         &amp#27;[90m# com.demoblaze.step_definitions.DemoBlazeStepDefinitionGroup13.navigate_to_the_cart_delete_asus_monitor_from_cart()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mNavigate  the Cart â†’ Delete Sony Xperia   from cart.&amp#27;[0m                                           &amp#27;[90m# com.demoblaze.step_definitions.DemoBlazeStepDefinitionGroup13.navigateTheCartDeleteSonyXperiaFromCart()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mClick on Place order&amp#27;[0m                                                                          &amp#27;[90m# com.demoblaze.step_definitions.DemoBlazeStepDefinitionGroup13.click_on_place_order()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mFill in all web form fields.&amp#27;[0m                                                                  &amp#27;[90m# com.demoblaze.step_definitions.DemoBlazeStepDefinitionGroup13.fill_in_all_web_form_fields()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mClick on Purchase&amp#27;[0m                                                                             &amp#27;[90m# com.demoblaze.step_definitions.DemoBlazeStepDefinitionGroup13.click_on_purchase()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAssert purchase amount  expected.&amp#27;[0m                                                             &amp#27;[90m# com.demoblaze.step_definitions.DemoBlazeStepDefinitionGroup13.assert_purchase_amount_expected()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mClick Ok button&amp#27;[0m                                                                               &amp#27;[90m# com.demoblaze.step_definitions.DemoBlazeStepDefinitionGroup13.click_ok_button()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the etsy page&amp#27;[0m                                                                                         &amp#27;[90m# com.demoblaze.step_definitions.EtsyTitleVerification.userIsOnTheEtsyPage()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser sees title is as expected.Expected: Etsy - Shop for handmade, vintage, custom, and unique gifts for everyone&amp#27;[0m &amp#27;[90m# com.demoblaze.step_definitions.EtsyTitleVerification.user_sees_title_is_as_expected_expected_etsy_shop_for_handmade_vintage_custom_and_unique_gifts_for_everyone()&amp#27;[0m
 After Scenario is running
 ]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 34539
+    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 42024
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
 Jul 10, 2022 1:47:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Search functionality  result title Verification(without parameterization)" classname="Etsy Title Verification" time="6.452">
+    <system-out><![CDATA[
+@withParam
+Scenario: Search functionality  result title Verification(without parameterization) &amp#27;[90m# src/test/resources/features/etsy.feature:13&amp#27;[0m
+Before Scenario is running
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the etsy page&amp#27;[0m                                                    &amp#27;[90m# com.demoblaze.step_definitions.EtsyTitleVerification.userIsOnTheEtsyPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser types Wooden Spoon in the search box&amp#27;[0m                                    &amp#27;[90m# com.demoblaze.step_definitions.EtsyTitleVerification.userTypesWoodenSpoonInTheSearchBox()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser clicks search button&amp#27;[0m                                                    &amp#27;[90m# com.demoblaze.step_definitions.EtsyTitleVerification.userClicksSearchButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser sees Wooden spoon - Etsy is in the title&amp#27;[0m                                 &amp#27;[90m# com.demoblaze.step_definitions.EtsyTitleVerification.userSeesWoodenSpoonEtsyIsInTheTitle()&amp#27;[0m
+After Scenario is running
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 22350
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 10, 2022 1:47:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Search functionality  result title Verification(with parameterization)" classname="Etsy Title Verification" time="7.005">
+    <system-out><![CDATA[
+@withoutParam
+Scenario: Search functionality  result title Verification(with parameterization) &amp#27;[90m# src/test/resources/features/etsy.feature:18&amp#27;[0m
+Before Scenario is running
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the etsy page&amp#27;[0m                                                 &amp#27;[90m# com.demoblaze.step_definitions.EtsyTitleVerification.userIsOnTheEtsyPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser types &amp#27;[0m&amp#27;[32m&amp#27;[1m"Wooden Spoon"&amp#27;[0m&amp#27;[32m in the search box&amp#27;[0m                               &amp#27;[90m# com.demoblaze.step_definitions.EtsyTitleVerification.userTypesInTheSearchBox(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser clicks search button&amp#27;[0m                                                 &amp#27;[90m# com.demoblaze.step_definitions.EtsyTitleVerification.userClicksSearchButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser sees &amp#27;[0m&amp#27;[32m&amp#27;[1m"Wooden spoon - Etsy"&amp#27;[0m&amp#27;[32m is in the title&amp#27;[0m                            &amp#27;[90m# com.demoblaze.step_definitions.EtsyTitleVerification.userSeesIsInTheTitle(java.lang.String)&amp#27;[0m
+After Scenario is running
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 10956
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 10, 2022 1:47:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>

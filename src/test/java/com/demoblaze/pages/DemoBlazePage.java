@@ -12,8 +12,8 @@ public class DemoBlazePage {
     @FindBy(xpath ="//a[.='Laptops']" )
     public WebElement laptops;
 
-    @FindBy(linkText = "Sony vaio i5")
-    public WebElement sonyVaio;
+    @FindBy(linkText = "Dell i7 8gb")
+    public WebElement dell;
 
     @FindBy(linkText = "Add to cart")
     public WebElement addCartBtn;
@@ -24,14 +24,14 @@ public class DemoBlazePage {
     @FindBy(linkText = "Phones")
     public WebElement phones;
 
-    @FindBy(linkText = "Samsung galaxy s6")
-    public WebElement samsungGalaxy;
+    @FindBy(linkText = "Sony xperia z5")
+    public WebElement sonyXperia;
 
     @FindBy(linkText = "Monitors")
     public WebElement monitors;
 
-    @FindBy(linkText = "Apple monitor 24")
-    public WebElement appleMonitor;
+    @FindBy(linkText = "ASUS Full HD")
+    public WebElement asusMonitor;
 
     @FindBy(linkText = "Cart")
     public WebElement cartBtn;
@@ -71,4 +71,10 @@ public class DemoBlazePage {
 
     @FindBy(css = "#tbodyid")
     public WebElement emptyCart;
+
+    @FindBy(xpath = "//td[.='ASUS Full HD']/following-sibling::td/following-sibling::td/a[.='Delete']")
+    public WebElement asusDeleteBtn;
+
+    @FindBy(xpath = "//td[.='Sony xperia z5']/following-sibling::td/following-sibling::td/a[.='Delete']")
+    public WebElement sonyDeleteBtn;
 }
